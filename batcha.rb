@@ -5,20 +5,20 @@
 class Batcha < Formula
   desc "Declarative deployment tool for AWS Batch Job Definitions"
   homepage "https://github.com/kyosu-1/batcha"
-  version "0.2.2"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyosu-1/batcha/releases/download/v0.2.2/batcha_0.2.2_darwin_amd64.tar.gz"
-      sha256 "a0f3321a7960a5989a3778bca57f58676971d3bd7ea8db9b1b72f96b61280292"
+      url "https://github.com/kyosu-1/batcha/releases/download/v0.3.0/batcha_0.3.0_darwin_amd64.tar.gz"
+      sha256 "cf928d6de4f2225c70dc305573864c8cca5880d4bde2eaa03404e9fc27fe26f4"
 
       def install
         bin.install "batcha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyosu-1/batcha/releases/download/v0.2.2/batcha_0.2.2_darwin_arm64.tar.gz"
-      sha256 "91ebfb12a9a904dd2e3ada0ce705fd4bcad1282f9732e7830759bc2775d253f7"
+      url "https://github.com/kyosu-1/batcha/releases/download/v0.3.0/batcha_0.3.0_darwin_arm64.tar.gz"
+      sha256 "6bd3a058bcce13459ae8e838fe249c3a2afa420ddb464f67eabbe2be0fe450af"
 
       def install
         bin.install "batcha"
@@ -28,15 +28,15 @@ class Batcha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyosu-1/batcha/releases/download/v0.2.2/batcha_0.2.2_linux_amd64.tar.gz"
-      sha256 "21a066234eb2291b20d291efe1a01400f6253d43deb5d10a9fd28125202854ef"
+      url "https://github.com/kyosu-1/batcha/releases/download/v0.3.0/batcha_0.3.0_linux_amd64.tar.gz"
+      sha256 "069ef827132841355225920e6f22cf499db0b3d5e67d62812b92e5f1461b1bfd"
       def install
         bin.install "batcha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyosu-1/batcha/releases/download/v0.2.2/batcha_0.2.2_linux_arm64.tar.gz"
-      sha256 "1d3320550e635a752ceeb93bfe5d60328acd28109c1bb5ae2ba9f13f700b2422"
+      url "https://github.com/kyosu-1/batcha/releases/download/v0.3.0/batcha_0.3.0_linux_arm64.tar.gz"
+      sha256 "afe022305428fa81bca2c9742467f08916ce30c901f04f7bd2b4f6fa030682e5"
       def install
         bin.install "batcha"
       end
