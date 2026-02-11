@@ -3,7 +3,7 @@ cask "batcha" do
   name "batcha"
   desc "Declarative deployment tool for AWS Batch Job Definitions"
   homepage "https://github.com/kyosu-1/batcha"
-  version "0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "batcha" do
   on_macos do
     on_intel do
       url "https://github.com/kyosu-1/batcha/releases/download/v#{version}/batcha_#{version}_darwin_amd64.tar.gz"
-      sha256 "9f11cf90770f9d0bc8065bfad09cc7d04daba9e9b0d5f235f306d9814afe386f"
+      sha256 "8f48d883446e93a46e10a78f48c4ce0c935f80fe3bc0ef5c4ab5e351e5c1a13c"
     end
     on_arm do
       url "https://github.com/kyosu-1/batcha/releases/download/v#{version}/batcha_#{version}_darwin_arm64.tar.gz"
-      sha256 "e5f99390bcb542827172487f708ac4bdcbe1f81903e6c0b06205d0d8f8072170"
+      sha256 "a2ac3a76732232793c6d9623d37bdf5ed4a5be32a2945c8bdf10e38debf15609"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/kyosu-1/batcha/releases/download/v#{version}/batcha_#{version}_linux_amd64.tar.gz"
-      sha256 "543ddb97184dff23f7f98f06d6272c206d147677fbb689637a3229307bfb1cfe"
+      sha256 "c0409dff6f99a86b38db69bd36f6148d2a8745651bf8879fd950b5085ca6646c"
     end
     on_arm do
       url "https://github.com/kyosu-1/batcha/releases/download/v#{version}/batcha_#{version}_linux_arm64.tar.gz"
-      sha256 "dc830b9492d8918f03fe372e0c9835069aa06ab4c0ce5b2ac342ea499e38aa6f"
+      sha256 "7903f3bbc0701d810bbc13281081d861867e1e9e9cc1bbdf780a9ca14c3b7560"
     end
   end
 
